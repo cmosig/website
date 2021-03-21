@@ -2,5 +2,9 @@ baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "My New Hugo Site"
 theme = "acedemic"
-HUGO_VERSION = "0.81.0"
+command = "hugo --gc --minify"
 
+[context.production.environment]
+HUGO_VERSION = "0.81.0"
+HUGO_ENV = "production"
+HUGO_ENABLEGITINFO = "true"
